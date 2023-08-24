@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="contacto.css">
+</head>
+<body>
+    <section>
+        <header>
+            <a href="../index.html"><img src="../img/300x300px-(vectorizado).png" class="logo"></a>
+            <div class="toggle" onclick="toggleMenu();"></div>
+                <ul class="navigation">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="informacion.html">Informacion</Menu></a></li>
+                    <li><a href="noticias.html">Noticias</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+        </header>
+        <div class="grid">
+            <div class="contacto">
+                <div class="cajaTexto">
+                    <h1>Contacto</h1>
+                </div>
+            </div>
+            <div class="redes">
+                <h2>Redes Sociales</h2>
+                <ul class="sociales">
+                    <li><a href="https://www.facebook.com/institutojhonlaustin"><img src="../img/facebook.png"><p>Institutojhonlaustin</p></a></li>
+                    <li><a href="https://www.instagram.com/johnl.austin/?hl=es-la"><img src="../img/instagram.png"><p>@johnl.austin</p></a></li>
+                </ul>
+                <h2>Numero Celular</h2><p>+52 747 141 4661</p>
+            </div>
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3804.073955132698!2d-99.5083634846282!3d17.551665302664862!2m3!1f0!
+                2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cbec8ead34967f%3A0x59de771a33b5c829!2sC.%20Quintana%20Roo%2048%2C%20Sta%20Cruz%2C%2039000%
+                20Chilpancingo%20de%20los%20Bravo%2C%20Gro.!5e0!3m2!1ses-419!2smx!4v1659842258081!5m2!1ses-419!2smx" width="600" height="450" style="border:0;"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        function toggleMenu(){
+            var menuToggle = document.querySelector('.toggle');
+            var navigation = document.querySelector('.navigation');
+            menuToggle.classList.toggle('active')
+            navigation.classList.toggle('active')
+        }
+    </script>
+
+</body>
+</html>

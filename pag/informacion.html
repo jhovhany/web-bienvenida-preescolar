@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informacion</title>
+    <link rel="stylesheet" href="informacion.css">
+</head>
+<body>
+    <section>
+        <header>
+            <a href="../index.html"><img src="../img/300x300px-(vectorizado).png" class="logo"></a>
+            <div class="toggle" onclick="toggleMenu();"></div>
+                <ul class="navigation">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="informacion.html">Informacion</Menu></a></li>
+                    <li><a href="noticias.html">Noticias</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+        </header>
+        <div class="grid">
+            <div class="informacion">
+                <div class="cajaTexto">
+                    <h1>Informacion</h1>
+                </div>
+                <div class="menu">
+                    <ul class="opciones">
+                        <li><a href=# onclick="changeText('.quiensomos')">¿Quienes Somos?</a></li>
+                        <li><a href=# onclick="changeText('.inscripciones')">Inscripciones</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="texto">
+                <div class="quiensomos">
+                    <p>¡INSCRIPCIONES ABIERTAS!<br>
+                        ⭐️PREESCOLAR BILINGÜE ⭐️
+                        ✏️Somos un preescolar bilingüe en Chilpancingo, estamos incorporados a la SEP.<br>
+                        ✏️Nuestra jornada escolar se imparte en su mayoría en Inglés.<br>
+                        ✏️Estamos avalados por Cambridge University para certificar los conocimientos de niños y jóvenes en el idioma.<br>
+                        ✏️Contamos con personal calificado en idiomas y en pedagogía infantil.<br>
+                        📌Descuento en inscripción y reinscripción durante este mes.<br>
+                        ¡INSCRÍBETE YA!<br>
+                        Horario de atención en las instalaciones del preescolar: Lunes a viernes de 09:00 a.m. a 2:00 p.m.<br>
+                        📍Calle Quintana Roo # 39 Col. centro. Chilpancingo, Gro</p>
+                </div>
+            </div>
+            <div class="slide2">
+                <ul>
+                    <li><img src="../img/slide2/avispa1.jpg" alt=""></li>
+                    <li><img src="../img/slide2/avispa2.jpg" alt=""></li>
+                    <li><img src="../img/slide2/avispa3.jpg" alt=""></li>
+                    <li><img src="../img/slide2/avispa4.jpg" alt=""></li>
+                </ul>
+            </div>
+            <div class="slide3">
+                <ul>
+                    <li><img src="../img/slide3/graduacion1.jpg" alt=""></li>
+                    <li><img src="../img/slide3/graduacion2.jpg" alt=""></li>
+                    <li><img src="../img/slide3/graduacion3.jpg" alt=""></li>
+                    <li><img src="../img/slide3/graduacion4.jpg" alt=""></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        function toggleMenu(){
+            var menuToggle = document.querySelector('.toggle');
+            var navigation = document.querySelector('.navigation');
+            menuToggle.classList.toggle('active')
+            navigation.classList.toggle('active')
+        }
+    </script>
+
+    
+</body>
+</html>

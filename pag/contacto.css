@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+section
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo
+{
+    position: relative;
+    max-width: 125px;
+}
+header ul
+{
+    position: relative;
+    display: flex;
+}
+header ul li
+{
+    list-style: none;
+}
+header ul li a
+{
+  display: inline-block;
+  color: #333;
+  font-weight: 400; 
+  margin-left: 60px;
+  text-decoration: none; 
+}
+.grid
+{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3];
+    grid-template-rows: [y0]  200px [y1] 1fr [y2] 1fr [y3];
+    justify-content: center;
+}
+.grid .contacto
+{
+    grid-column-start: x0;
+    grid-column-end: x3;
+    grid-row-start: y0;
+    grid-row-end: y1;
+    justify-content: center;
+    align-items:initial;
+}
+.grid .contacto .cajaTexto
+{
+    grid-column-start: x0;
+    grid-column-end: x1;
+    grid-row-start: y0;
+    grid-row-end: y1;
+    margin-bottom: 20%;
+    margin-top: 5%;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background: #1B1464;
+}
+
+.grid .contacto .cajaTexto h1
+{
+    color: #FFDE59;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 600;
+    text-align: center;
+}
+
+.grid .redes
+{
+    grid-column-start: x2;
+    grid-column-end: x3;
+    grid-row-start: y1;
+    grid-row-end: y2;
+    background: #fff;
+}
+
+.grid .redes ul
+{
+    list-style: none;
+}
+
+.grid .mapa
+{
+    grid-column-start: x0;
+    grid-column-end: x2;
+    grid-row-start: y1;
+    grid-row-end: y2;
+    height: 300px;
+    width: 400px;
+
+}
+
+@media (max-width: 991px)
+{
+    header
+    {
+        padding: 20px;    
+    }
+    header .logo 
+     {
+        max-width: 80px;
+     }
+    header ul 
+    {
+        display: none;
+    }
+    .toggle
+    {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        background: url(../img/menu.png);
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: invert(1);
+        z-index: 11;
+    }
+    .toggle.active
+    {
+        position: fixed;
+        right: 20px;
+        background: url(../img/close.png);
+        background-size: 25px;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: invert(0);
+    }
+    header ul.navigation.active
+    {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #1B1464;
+        z-index: 10;
+    }
+    header ul li a
+    {
+        font-size: 2em;
+        margin: 5px 0;
+        filter: invert(1);
+    }
+    header ul li a:hover
+    {
+        color: #fff;
+    }
+    section
+    {
+        padding: 20px 20px 120px;
+    }
+    .grid
+    {
+        margin-top: 15%;
+    }
+    .grid .mapa
+    {
+        width:300;
+        height: 200;
+    }
+}

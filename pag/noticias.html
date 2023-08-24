@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias</title>
+    <link rel="stylesheet" href="noticias.css">
+</head>
+<body>
+    <section>
+        <div class="circulo"></div>
+        <header>
+            <a href="../index.html"><img src="../img/300x300px-(vectorizado).png" class="logo"></a>
+            <div class="toggle" onclick="toggleMenu();"></div>
+                <ul class="navigation">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="informacion.html">Informacion</Menu></a></li>
+                    <li><a href="noticias.html">Noticias</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+        </header>
+        <div class="noticias">
+            <div class="cajaTexto">
+                <h1>Noticias</h1><br>
+                <h2>Verano Bilingüe 2022</h2>
+                <p>Hoy dimos inicio a nuestro “Verano Bilingüe 2022”.<br>Tendras un día lleno de diversión y aprendizaje.  🪁🥋🎨🌤<br>
+                    ¡AÚN ESTÁS A TIEMPO, INSCRÍBETE CON NOSOTROS!</p>
+            </div>
+        </div>
+        <div class="slide1">
+            <ul>
+                <li><img src="../img/slide1/verano1.jpg" alt=""></li>
+                <li><img src="../img/slide1/verano2.jpg" alt=""></li>
+                <li><img src="../img/slide1/verano3.jpg" alt=""></li>
+                <li><img src="../img/slide1/verano4.jpg" alt=""></li>
+            </ul>
+        </div>
+
+    <script type="text/javascript">
+        function toggleMenu(){
+            var menuToggle = document.querySelector('.toggle');
+            var navigation = document.querySelector('.navigation');
+            menuToggle.classList.toggle('active')
+            navigation.classList.toggle('active')
+        }
+    </script>
+    
+</body>
+</html>
