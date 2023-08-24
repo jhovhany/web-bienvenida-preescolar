@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Instituto John L. Austin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="imagen">
+            <img src="img/imagen1.jpg" class="fondoImagen">
+        </div>
+        <div class="circulo"></div>
+        <header>
+            <a href="index.html"><img src="img/300x300px-(vectorizado).png" class="logo"></a>
+            <div class="toggle" onclick="toggleMenu();"></div>
+                <ul class="navigation">
+                    <li><a href=#>Inicio</a></li>
+                    <li><a href="pag/informacion.html">Informacion</Menu></a></li>
+                    <li><a href="pag/noticias.html">Noticias</a></li>
+                    <li><a href="pag/contacto.html">Contacto</a></li>
+                </ul>
+        </header>
+        <div class="contenido">
+            <div class="cajaTexto">
+                <h2>Instituto<br><span>John L. Austin</span></h2>
+                <p>Preescolar Bilingüe</p>
+                    <a href="pag/informacion.html">Leer Mas</a>
+            </div>
+            <div class="circuloTexto">
+                <h2>¡INSCRIPCIONES<br><span>ABIERTAS!</span></h2>
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="img/punto.png" onclick="changeCircleColor('#1B1464');changeBackPic('img/imagen1.jpg');changeTextColor('#FFDE59')"></li>
+            <li><img src="img/punto.png" onclick="changeCircleColor('#FFDE59');changeBackPic('img/imagen2.jpg');changeTextColor('#1B1464')"></li>
+            <li><img src="img/punto.png" onclick="changeCircleColor('#1B1464');changeBackPic('img/imagen3.jpg');changeTextColor('#FFDE59')"></li>
+        </ul>
+        <ul class="redes">
+            <li><a href="https://www.facebook.com/institutojhonlaustin"><img src="img/facebook.png"></a></li>
+            <li><a href="#"><img src="img/twitter.png"></a></li>
+            <li><a href="https://www.instagram.com/johnl.austin/?hl=es-la"><img src="img/instagram.png"></a></li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        function changeBackPic(anything){
+            document.querySelector('.fondoImagen').src = anything;
+        }
+
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circulo')
+            circle.style.background = color;
+        }
+
+        function changeTextColor(color){
+            const text = document.querySelector('.circuloTexto')
+            text.style.color = color;
+        }
+
+        function toggleMenu(){
+            var menuToggle = document.querySelector('.toggle');
+            var navigation = document.querySelector('.navigation');
+            menuToggle.classList.toggle('active')
+            navigation.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
